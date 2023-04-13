@@ -10,18 +10,18 @@ import ProcessBox from './ProcessBox'
 const processes = [
     {
         icon: "pe-7s-pen",
-        title: "Tell us what you need",
-        desc: "The Big Oxmox advised her not to do so.",
+        title: "Analysis and Planning",
+        desc: "A detailed roadmap you crafted during the planning phase, highlighting the project’s milestones.",
     },
     {
         icon: "pe-7s-id",
-        title: "Get free quotes",
-        desc: "Little Blind Text didn’t listen.",
+        title: "Design of Software Development Product",
+        desc: "Translates functional requirements into technical specifications, ensuring the software will be efficient.",
     },
     {
         icon: "pe-7s-target",
         title: "Deliver high quality product",
-        desc: "When she reached the first hills.",
+        desc: "Upon successful pre-launch testing, your software progresses to the production stage. At Relevant, we expertly orchestrate software product releases.",
     },
 ];
 

@@ -12,8 +12,7 @@ function WebsiteDesc(props) {
             <Col lg={12} className="text-center">
               <h2 className="text-white">Build your dream website today</h2>
               <p className="pt-3 home-desc">
-                But nothing the copy said could convince her and so it didn’t
-                take long until a few insidious Copy Writers ambushed her.
+              Development and programming: for bringing together all elements to create a high-quality.
               </p>
               {/* <Link
                                 href="#"

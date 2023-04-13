@@ -28,10 +28,10 @@ const Section = () => {
                             <Row className="justify-content-center">
                                 <Col lg={8} className="text-white text-center">
                                     <h1 className="home-title">
-                                        We help startups launch their products
+                                    PHP Developers
                                     </h1>
                                     <p className="pt-3 home-desc">
-                                        Etiam sed.Interdum consequat proin vestibulum class at.
+                                    Hire world-class PHP Developers to deliver highly-scalable, robust web solutions.
                                     </p>
                                     <p className="play-shadow mt-4">
                                         {/* <Link href="#">
