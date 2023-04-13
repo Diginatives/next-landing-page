@@ -15,7 +15,7 @@ import {
 } from "reactstrap";
 import menuItems from "./headerData";
 import img3 from "assets/images/diginatives.jpg";
-const header = (props) => {
+const Header = (props) => {
   const [isOpenMenu, setOpen] = useState(false);
   const [navClass, setnavClass] = useState("");
   const { routes } = props;
@@ -95,4 +95,4 @@ const header = (props) => {
   );
 };
 
-export default header;
+export default Header;

@@ -13,7 +13,7 @@ const GetStart = () => {
                     <Row>
                         <Col lg={{ size: 8, offset: 2 }} className="text-center">
                             <h1 className="get-started-title text-white">
-                                Let's Get Started
+                                Lets Get Started
                             </h1>
                             <div className="section-title-border mt-4 bg-white"></div>
                             <p className="section-subtitle font-secondary text-white text-center pt-4">

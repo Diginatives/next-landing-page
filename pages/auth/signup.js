@@ -19,9 +19,9 @@ class Signup extends Component {
     return (
       <React.Fragment>
         <div className="account-home-btn d-none d-sm-block">
-          <Link href="/">
+          {/* <Link href="/">
             <a className="text-white"><i className="mdi mdi-home h1"></i></a>
-          </Link>
+          </Link> */}
         </div>
 
         <section className="bg-account-pages vh-100">
@@ -34,11 +34,11 @@ class Signup extends Component {
                       <CardBody>
                         <div className="text-center mt-3">
                           <h3 className="font-weight-bold">
-                            <Link
+                            {/* <Link
                               href="/layout1"
                             >
                               <a className="text-dark text-uppercase account-pages-logo">Dorsin</a>
-                            </Link>
+                            </Link> */}
                           </h3>
                           <p className="text-muted">
                             Sign up for a new Account
@@ -108,10 +108,10 @@ class Signup extends Component {
 
                             <div className="mt-4 mb-0 text-center">
                               <p className="mb-0">
-                                Don't have an account ?{" "}
-                                <Link href="/auth/login">
+                                {/* Don't have an account ?{" "} */}
+                                {/* <Link href="/auth/login">
                                   <a className="text-danger">Sign in</a>
-                                </Link>
+                                </Link> */}
                               </p>
                             </div>
                           </AvForm>

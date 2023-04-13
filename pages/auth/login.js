@@ -19,9 +19,9 @@ class Login extends Component {
         return (
             <React.Fragment>
                 <div className="account-home-btn d-none d-sm-block">
-                    <Link href="/" className="text-white">
+                    {/* <Link href="/" className="text-white">
                         <a><i className="mdi mdi-home h1"></i></a>
-                    </Link>
+                    </Link> */}
                 </div>
 
                 <section className="bg-account-pages vh-100">
@@ -34,11 +34,11 @@ class Login extends Component {
                                             <CardBody>
                                                 <div className="text-center mt-3">
                                                     <h3 className="font-weight-bold">
-                                                        <Link
+                                                        {/* <Link
                                                             href="/layout1"
                                                         >
                                                             <a className="text-dark text-uppercase account-pages-logo">Dorsin</a>
-                                                        </Link>
+                                                        </Link> */}
                                                     </h3>
                                                     <p className="text-muted">
                                                         Sign in to continue to Dorsin.
@@ -95,9 +95,9 @@ class Login extends Component {
                                                         </div>
 
                                                         <div className="mt-4 mb-0 text-center">
-                                                            <Link href="/auth/forgetpassword">
+                                                            {/* <Link href="/auth/forgetpassword">
                                                                 <a className="text-dark"><i className="mdi mdi-lock"></i> Forgot your password?</a>
-                                                            </Link>
+                                                            </Link> */}
                                                         </div>
                                                     </AvForm>
                                                 </div>

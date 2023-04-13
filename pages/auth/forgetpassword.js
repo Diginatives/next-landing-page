@@ -33,11 +33,11 @@ class PasswordForget extends Component {
                                             <CardBody>
                                                 <div className="text-center mt-3">
                                                     <h3 className="font-weight-bold">
-                                                        <Link
+                                                        {/* <Link
                                                             href="/layout1"
                                                         >
                                                             <a className="text-dark text-uppercase account-pages-logo">Dorsin</a>
-                                                        </Link>
+                                                        </Link> */}
                                                     </h3>
                                                     <p className="text-muted">Reset Password</p>
                                                 </div>
@@ -46,7 +46,7 @@ class PasswordForget extends Component {
                                                         className="alert alert-warning  text-center"
                                                         role="alert"
                                                     >
-                                                        Enter your email address and we'll send you an email
+                                                        Enter your email address and well send you an email
                                                         with instructions to reset your password.
                                                     </div>
                                                     <AvForm>
