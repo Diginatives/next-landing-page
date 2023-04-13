@@ -3,11 +3,11 @@ import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 
 // Modal Video
-import ModalVideo from "react-modal-video";
-import "../../node_modules/react-modal-video/scss/modal-video.scss";
+// import ModalVideo from "react-modal-video";
+// import "../../node_modules/react-modal-video/scss/modal-video.scss";
 
 //Import Particles
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 const Section = props => {
     const [isOpen, setisOpen] = useState(false);
@@ -20,7 +20,7 @@ const Section = props => {
         <React.Fragment>
             <section className="section bg-home vh-100" id="home">
                 <div className="bg-overlay">
-                    <Particles
+                    {/* <Particles
                         params={{
                             particles: {
                                 number: {
@@ -42,7 +42,7 @@ const Section = props => {
                                 radius: 1,
                             },
                         }}
-                    />
+                    /> */}
                 </div>
                 <div className="">
                     <div className="">
@@ -61,13 +61,13 @@ const Section = props => {
                                         consectetur adipisicing eli.
                                     </p>
                                     <p className="play-shadow mmt-4">
-                                        <Link href="/layout9">
+                                        {/* <Link href="/layout9">
                                             <a
                                                 onClick={() => {
                                                     openModal();
                                                 }}
                                                 className="play-btn video-play-icon"><i className="mdi mdi-play text-center"></i></a>
-                                        </Link>
+                                        </Link> */}
                                     </p>
                                 </Col>
                             </Row>
@@ -75,12 +75,12 @@ const Section = props => {
                     </div>
                 </div>
                 {/* Render ModalSection Component for Modal */}
-                <ModalVideo
+                {/* <ModalVideo
                     channel="vimeo"
                     isOpen={isOpen}
                     videoId="287684225"
                     onClose={() => setisOpen(!isOpen)}
-                />
+                /> */}
             </section>
         </React.Fragment>
     );
