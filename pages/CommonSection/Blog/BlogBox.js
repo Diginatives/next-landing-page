@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col } from "reactstrap";
-import Link from "next/link";
 
 const BlogBox = ({ blogs }) => {
     return (

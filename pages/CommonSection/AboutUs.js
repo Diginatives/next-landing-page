@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
 import img3 from "assets/images/online-world.svg";
 const AboutUs = (props) => {
   return (

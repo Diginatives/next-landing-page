@@ -14,7 +14,7 @@ import GetStart from 'pages/CommonSection/GetStart/GetStart';
 import Contact from 'pages/CommonSection/Contact/Contact';
 import Social from 'pages/CommonSection/Social';
 
-const layout1 = props => {
+const Layout1 = props => {
     return (
         <React.Fragment>
             {/* import Header */}
@@ -63,4 +63,4 @@ const layout1 = props => {
 }
 
 
-export default layout1;
+export default Layout1;
