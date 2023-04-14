@@ -75,7 +75,7 @@ const Header = (props) => {
                     </NavItem>
                   ))}
                 </Nav>
-                <div className="nav-button ms-auto">
+                {/* <div className="nav-button ms-auto">
                   <Nav navbar className="navbar-end">
                     <li>
                       <img
@@ -85,7 +85,7 @@ const Header = (props) => {
                       />
                     </li>
                   </Nav>
-                </div>
+                </div> */}
               </ScrollspyNav>
             </Collapse>
           </Container>

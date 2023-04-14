@@ -9,23 +9,27 @@ const AboutUs = (props) => {
           <Row className="vertical-content">
             <Col lg={5}>
               <div className="features-box">
-                <h3>
-                  PHP developers write server-side web applications using
-                  Hypertext Preprocessor (PHP) scripting languages.
-                </h3>
+                <h3>Why Laravel?</h3>
                 <p className="text-muted web-desc">
-                  Knowledge of frameworks, also called platforms, used to create
-                  PHP applications can allow you to increase productivity and
-                  accuracy while coding. Many frameworks have capabilities that
-                  allow you to use code from a PHP library.
+                  Laravel is an open-source PHP framework that is perfect for
+                  designing web solutions of all sizes with impeccable
+                  appearance and stunning functionalities.
                 </p>
                 <ul className="text-muted list-unstyled mt-4 features-item-list">
-                  <li className="">Manages Order Effectively.</li>
-                  <li className="">Efficient and Secure.</li>
-                  <li className="">Proper Workflow Management.</li>
-                  <li className="">Submit Your Orgnization.</li>
                   <li className="">
-                    Build efficient, testable, and reusable PHP modules.
+                    Laravel framework currently has 38,000+ stars on GitHub.
+                  </li>
+                  <li className="">
+                    Popular framework among developers thanks to the modular and
+                    stress-free coding provided by it.
+                  </li>
+                  <li className="">
+                    Perfect for projects of all sizes, whether start-up
+                    applications or enterprise-level solutions.
+                  </li>
+                  <li className="">
+                    Easily integrate-able with third-party services, plugins,
+                    and extensions.
                   </li>
                 </ul>
                 {/* <Link
@@ -37,7 +41,11 @@ const AboutUs = (props) => {
             </Col>
             <Col lg={7}>
               <div className="features-img features-right text-right">
-                <img alt="macbook" src={img3.src} className="img-fluid" />
+                <img
+                  alt="macbook"
+                  src="https://www.dynamologic.com/wp-content/themes/dynamologic2021/images/laravel-img.webp"
+                  className="img-fluid"
+                />
               </div>
             </Col>
           </Row>

@@ -15,12 +15,16 @@ const Section = () => {
         <div className="display-table">
           <div className="display-table-cell">
             <Container>
-              <Row className="justify-content-center">
+              <Row className="justify-content-centePser">
                 <Col lg={8} className="text-white text-center">
-                  <h1 className="home-title">PHP Developers</h1>
+                  <h1 className="home-title">Laravel Development Services</h1>
+                  <h3 className="home-title1">
+                    Custom Elegantly Coded Solutions
+                  </h3>
                   <p className="pt-3 home-desc">
-                    Hire world-class PHP Developers to deliver highly-scalable,
-                    robust web solutions.
+                    We develop maintainable and sustainable PHP web applications
+                    using the Laravel framework that are loaded with high-level
+                    features and sophisticated functionalities.
                   </p>
                   <p className="play-shadow mt-4">
                     {/* <Link href="#">

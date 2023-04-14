@@ -8,35 +8,35 @@ import ServiceBox from "./ServiceBox";
 const services1 = [
   {
     icon: "pe-7s-monitor",
-    title: "MOBILITY",
-    desc: "Enterprise mobility is key to digital transformation.",
+    title: "Custom Software Development",
+    desc: "Dedicated web and mobile software solutions tailored to the growth stage including research and business consultation support.",
   },
   {
     icon: "pe-7s-display2",
     title: "SOFTWARE DEVELOPMENT",
-    desc: "Full-stack web application development services.",
+    desc: "Outsourcing of an entire software project or staff augmentation in response to the unique needs of a particular business.",
   },
   {
     icon: "pe-7s-chat",
-    title: "CHATBOTS",
-    desc: "We build chatbots that use predictive intelligence and analytics.",
+    title: "Cloud Application Development",
+    desc: "Modern web and mobile applications based on cloud solutions. Cloud increases security and ensures instant access.",
   },
 ];
 const services2 = [
   {
     icon: "pe-7s-science",
-    title: "QUALITY ASSURANCE",
-    desc: "Reduce time to market, lower development costs, and streamline delivery.",
+    title: "API Integration Services",
+    desc: "We create unique APIs and integrate systems using existing solutions. We deliver full integrations between existing platforms.",
   },
   {
     icon: "pe-7s-user",
-    title: "USER EXPERIENCE",
-    desc: "An engaging, seamless user experience is the surest path to business success.",
+    title: "Front-End Development Services",
+    desc: "Modern front-end frameworks and tools for user-loved web applications. Fully responsive and powerful applications.",
   },
   {
     icon: "pe-7s-plane",
-    title: "ARTIFICIAL INTELLIGENCE",
-    desc: "Empower your business with AI. Innovate, automate and grow.",
+    title: "Artificial Intelligence Development",
+    desc: "We provide AI-based solutions using Python and other tools for optimal results. We develop comprehensive AI tools.",
   },
 ];
 
@@ -47,8 +47,8 @@ function Services(props) {
         <Container>
           {/* section title */}
           <SectionTitle
-            title="Our Services"
-            desc="We are helping customers digitalize existing business, build innovative new products, and augment teams with high performance members."
+            title="Laravel Development Services"
+            desc="We develop maintainable and sustainable PHP web applications using the Laravel framework that are loaded with high-level features and sophisticated functionalities.."
           />
           <Row className="mt-4">
             {/* services box */}

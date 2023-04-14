@@ -6,44 +6,50 @@ import SectionTitle from "components/Common/SectionTitle";
 
 //Import Pricing
 import PricingBox from "./PricingBox";
-
+import img3 from "assets/images/icons1.png";
+import img7 from "assets/images/icones7.png";
+import img10 from "assets/images/icones10.png";
+import img2 from "assets/images/icons2.png";
+import img33 from "assets/images/icons3.png";
+import img5 from "assets/images/icons5.png";
+import img6 from "assets/images/icons6.png";
+import img9 from "assets/images/icons9.png";
+import img11 from "assets/images/icons11.png";
+import img12 from "assets/images/icons12.png";
+import img13 from "assets/images/icons13.png";
 const pricings = [
     {
-        title: "Economy",
-        price: 9.90,
-        duration: "MONTH",
-        features: [
-            { title: "Bandwidth", value: "1GB" },
-            { title: "Onlinespace ", value: "50MB" },
-            { title: "Support", value: "No" },
-            { title: "Domain", value: "1" },
-            { title: "Hidden Fees", value: "No" },
-        ],
+        title: img3,
+        
+    },
+   
+    {
+        title: img2,
+        
     },
     {
-        title: "DELUXE",
-        price: 19.90,
-        duration: "Mo",
-        isActive: true,
-        features: [
-            { title: "Bandwidth", value: "10GB" },
-            { title: "Onlinespace ", value: "500MB" },
-            { title: "Support", value: "No" },
-            { title: "Domain", value: "10" },
-            { title: "Hidden Fees", value: "No" },
-        ],
+        title: img33,
+        
     },
     {
-        title: "ULTIMATE",
-        price: 29.90,
-        duration: "Mo",
-        features: [
-            { title: "Bandwidth", value: "100GB" },
-            { title: "Onlinespace ", value: "2 GB" },
-            { title: "Support", value: "Yes" },
-            { title: "Domain", value: "Unlimited" },
-            { title: "Hidden Fees", value: "No" },
-        ],
+        title: img5,
+        
+    },
+    {
+        title: img6,
+        
+    },
+    {
+        title: img9,
+        
+    },
+    {
+        title: img12,
+        
+    },
+    {
+        title: img13,
+        
     },
 ];
 
@@ -54,8 +60,8 @@ const Pricing = props => {
                 <Container>
                     {/* section title */}
                     <SectionTitle
-                        title="Our Pricing"
-                        desc="Call to action pricing table is really crucial to your for your business website. Make your bids stand-out with amazing options."
+                        title="Technologies We Support"
+                        desc="SoftPyramid is well-versed in a wide range of cutting-edge technologies and frameworks to help you achieve your business goals. We have expertise in the Laravel development frameworks for server-side scripting and front-end technologies such as Livewire, VueJs, React, and NodeJs. We leverage the latest PHP technologies and tools to create custom solutions that are scalable, dependable, and cost-effective."
                     />
 
                     <Row className="mt-5">

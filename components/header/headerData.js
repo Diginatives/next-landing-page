@@ -12,26 +12,26 @@ export default [
   {
     id: 3,
     idnm: "features",
-    heading: "Features",
+    heading: "Portfolio",
   },
   {
     id: 4,
     idnm: "pricing",
-    heading: "Pricing",
+    heading: "Careers",
   },
-  {
-    id: 5,
-    idnm: "team",
-    heading: "Team",
-  },
+  // {
+  //   id: 5,
+  //   idnm: "team",
+  //   heading: "Team",
+  // },
   // {
   //   id: 6,
   //   idnm: "blog",
   //   heading: "Blog",
   // },
   {
-    id: 6,
+    id: 5,
     idnm: "contact",
-    heading: "Contact",
+    heading: "Contact Us",
   },
 ];

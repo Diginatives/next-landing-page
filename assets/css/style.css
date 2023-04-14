@@ -96,10 +96,10 @@ p {
     linear,
     left top,
     right top,
-    from(#512da8),
-    to(#711e72)
+    from(#f9322c),
+    to(#f4645f)
   );
-  background: linear-gradient(to right, #512da8, #711e72);
+  background: linear-gradient(to right, #f9322c, #f4645f);
   opacity: 0.9;
   position: absolute;
   height: 100%;
@@ -940,7 +940,8 @@ iframe {
 }
 
 .text-muted {
-  color: #95a0ab !important;
+  color: #393b44 !important;
+  /* color: #95a0ab !important; */
 }
 
 .border-muted {
@@ -1950,12 +1951,13 @@ textarea.form-control {
 }
 
 .contact-social {
-  padding: 20px 0px;
+  padding: 0px 0px;
+  height: 80px;
 }
 
 .contact-social .social-icon {
   border: 2px solid #afb5bd;
-  border-radius: 50%;
+  border-radius: 30%;
   color: #afb5bd;
   width: 48px;
   height: 48px;
