@@ -24,13 +24,13 @@ export default [
     idnm: "team",
     heading: "Team",
   },
+  // {
+  //   id: 6,
+  //   idnm: "blog",
+  //   heading: "Blog",
+  // },
   {
     id: 6,
-    idnm: "blog",
-    heading: "Blog",
-  },
-  {
-    id: 7,
     idnm: "contact",
     heading: "Contact",
   },

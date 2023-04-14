@@ -7,27 +7,23 @@ const links = [
   {
     title: "DORSIN",
     child: [
-      { link: "#", title: "Home" },
-      { link: "#", title: "About us" },
-      { link: "#", title: "Careers" },
-      { link: "#", title: "Contact us" },
+      { link: "#", title: "Home", target: "#home" },
+      { link: "#", title: "Blog", target: "#blog" },
+      { link: "#", title: "Contact", target: "#contact" },
     ],
   },
   {
     title: "Information",
     child: [
-      { link: "#", title: "Terms & Condition" },
-      { link: "#", title: "About us" },
-      { link: "#", title: "Jobs" },
-      { link: "#", title: "Bookmarks" },
+      { link: "#", title: "Services", target: "#services" },
+      { link: "#", title: "Features", target: "#features" },
     ],
   },
   {
     title: "Support",
     child: [
-      { link: "#", title: "FAQ" },
-      { link: "#", title: "Contact" },
-      { link: "#", title: "Disscusion" },
+      { link: "#", title: "Team", target: "#team" },
+      { link: "#", title: "Pricing", target: "#pricing" },
     ],
   },
 ];
@@ -50,7 +46,7 @@ const Footer = (props) => {
                     {fLink.child.map((fLinkChild, key) => (
                       <li key={key}>
                         {/* <Link href={fLinkChild.link}><a>{fLinkChild.title}</a></Link> */}
-                        <a>{fLinkChild.title}</a>
+                        <a href={fLinkChild.target}>{fLinkChild.title}</a>
                       </li>
                     ))}
                   </ul>
@@ -59,20 +55,19 @@ const Footer = (props) => {
             ))}
 
             <Col lg={3} className="mt-4">
-              <h4>Subscribe</h4>
+              <h4>About</h4>
               <div className="text-muted mt-4">
                 <p>
-                  In an ideal world this text wouldn’t exist, a client would
-                  acknowledge the importance of having web copy before the
-                  design starts.
+                  We are a software solutions company with focus on providing
+                  custom and personalized technology solutions.
                 </p>
               </div>
-              <Form className="subscribe">
+              {/* <Form className="subscribe">
                 <input placeholder="Email" className="form-control" required />
                 {/* <Link href="#" legacyBehavior>
                                     {/* <a className="submit"><i className="pe-7s-paper-plane"></i></a> */}
-                {/* </Link> */}
-              </Form>
+              {/* </Link> */}
+              {/* </Form> */}
             </Col>
           </Row>
         </Container>

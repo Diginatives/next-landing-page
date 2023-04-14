@@ -47,7 +47,7 @@ const Layout1 = props => {
             <GetStart />
 
             {/* import Blog */}
-            <Blog />
+            {/* <Blog /> */}
 
             {/* import Contact */}
             <Contact />

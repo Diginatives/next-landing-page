@@ -60,7 +60,7 @@ const Header = (props) => {
             <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
               <ScrollspyNav
                 scrollTargetIds={targetId}
-                scrollDuration="800"
+                scrollDuration="50"
                 headerBackground="true"
                 activeNavClass="active"
                 className="navbar-collapse"

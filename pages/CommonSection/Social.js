@@ -47,12 +47,35 @@ const Social = () => {
             </Col>
             <Col lg={3} className="mt-4">
               <p className="contact-title">
-                <i className="pe-7s-call"></i> &nbsp;+1 (714) 820-9946
+                <i className="pe-7s-call">
+                  <a
+                    href="tel:+17148209946"
+                    style={{
+                      color: "#FDA527",
+                      textDecoration: "none",
+                      backgroundColor: "transparent",
+                    }}
+                  >
+                    {" "}
+                    &nbsp;+1 (714) 820-9946
+                  </a>
+                </i>
               </p>
             </Col>
             <Col lg={3} className="mt-4 text-right">
               <p className="contact-title">
-                <i className="pe-7s-mail-open"></i>&nbsp; info@diginatives.io
+                <a
+                  href="mailto:info@diginatives.io"
+                  style={{
+                    color: "#FDA527",
+                    textDecoration: "none",
+                    backgroundColor: "transparent",
+                  }}
+                >
+                  <i class="fa fa-envelope pe-7s-mail-open"></i>
+                  info@diginatives.io
+                </a>
+                {/* <i className="pe-7s-mail-open"></i>&nbsp; info@diginatives.io */}
               </p>
             </Col>
           </Row>
