@@ -1,28 +1,26 @@
-import React from 'react';
+import React from "react";
 import { Col } from "reactstrap";
 
 const TeamBox = ({ teams }) => {
-    return (
-        <React.Fragment>
-            {(teams || []).map((team, key) => (
-                <Col key={key} lg={3} sm={6}>
-                    <div className="team-box text-center hover-effect">
-                        <div className="team-wrapper">
-                            <div className="team-member">
-                                <img
-                                    alt="team"
-                                    src={team.image.src}
-                                    className="img-fluid rounded"
-                                />
-                            </div>
-                        </div>
-                        <h4 className="team-name">{team.title}</h4>
-                        <p className="text-uppercase team-designation">{team.desc}</p>
-                    </div>
-                </Col>
-            ))}
-        </React.Fragment>
-    );
-}
+  return (
+    <React.Fragment>
+      {(teams || []).map((team, key) => (
+        <Col lg={4} key={key}>
+          <div className={"text-center pricing-box hover-effect"}>
+            <img
+              src={team?.image?.src}
+              alt="No image"
+              style={{ width: "120px", height: "120px" }}
+            />
+            <br />
+            <br />
+            <h3>{team?.title}</h3>
+            <p>{team?.desc}</p>
+          </div>
+        </Col>
+      ))}
+    </React.Fragment>
+  );
+};
 
 export default TeamBox;

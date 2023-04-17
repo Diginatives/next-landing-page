@@ -9,11 +9,11 @@ const FooterLink = () => {
           <Row>
             <Col lg={12}>
               <div className="float-start pull-none">
-                <p className="copy-rights text-muted">
+                <p className="copy-rights" style={{ color: "#98a0aa" }}>
                   2023 © All Rights Reserved
                 </p>
               </div>
-              
+
               <div className="clearfix"></div>
             </Col>
           </Row>

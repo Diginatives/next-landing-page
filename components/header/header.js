@@ -75,17 +75,45 @@ const Header = (props) => {
                     </NavItem>
                   ))}
                 </Nav>
-                {/* <div className="nav-button ms-auto">
+                <div className="nav-button ms-auto">
                   <Nav navbar className="navbar-end">
-                    <li>
-                      <img
-                        alt="dorsin"
-                        src={img3.src}
-                        style={{ width: "29%" }}
-                      />
-                    </li>
+                    <ul className="list-inline social mt-4">
+                      <li className="list-inline-item">
+                        <a
+                          className="social-icon"
+                          href="https://www.facebook.com/DiginativesPakistan/"
+                          target="_blank"
+                        >
+                          <i className="mdi mdi-facebook"></i>
+                        </a>
+                        {/* <Link href="#">
+                                    </Link> */}
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          className="social-icon"
+                          href="https://www.youtube.com/@diginativesio"
+                          target="_blank"
+                        >
+                          <i className="mdi mdi-youtube"></i>
+                        </a>
+                        {/* <Link href="#">
+                                    </Link> */}
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          className="social-icon"
+                          href="https://www.linkedin.com/company/diginatives-io/"
+                          target="_blank"
+                        >
+                          <i className="mdi mdi-linkedin"></i>
+                        </a>
+                        {/* <Link href="#">
+                                    </Link> */}
+                      </li>
+                    </ul>
                   </Nav>
-                </div> */}
+                </div>
               </ScrollspyNav>
             </Collapse>
           </Container>

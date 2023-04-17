@@ -2,28 +2,37 @@ import React from "react";
 import { Container, Row, Col, Form } from "reactstrap";
 import Link from "next/link";
 import FooterLink from "./FooterLink";
-
 const links = [
   {
-    title: "DORSIN",
+    title: "Services",
     child: [
-      { link: "#", title: "Home", target: "#home" },
-      { link: "#", title: "Blog", target: "#blog" },
-      { link: "#", title: "Contact", target: "#contact" },
+      { link: "#", title: "SaaS Web App Development", target: "#" },
+      { link: "#", title: "Full-stack Development", target: "#" },
+      { link: "#", title: "Technology Consulting", target: "#" },
+      { link: "#", title: "UI/UX Design Services", target: "#" },
+      { link: "#", title: "Consultation", target: "#" },
     ],
   },
   {
     title: "Information",
     child: [
       { link: "#", title: "Services", target: "#services" },
-      { link: "#", title: "Features", target: "#features" },
+      { link: "#", title: "Home", target: "#home" },
+      { link: "#", title: "Portfolio", target: "#blog" },
+      { link: "#", title: "Careers", target: "#careers" },
+      { link: "#", title: "Contact Us", target: "#contact" },
     ],
   },
   {
-    title: "Support",
+    title: "Office Address",
     child: [
-      { link: "#", title: "Team", target: "#team" },
-      { link: "#", title: "Pricing", target: "#pricing" },
+      {
+        link: "",
+        title: "Suite 200, MainSt. Milpitas, CA 96035, USA",
+        target: "#",
+      },
+      { link: "", title: "Phone: +1(714)820-9946", target: "#" },
+      { link: "", title: "Email: info@diginatives.io", target: "#" },
     ],
   },
 ];
@@ -45,7 +54,6 @@ const Footer = (props) => {
                   <ul className="list-unstyled footer-list">
                     {fLink.child.map((fLinkChild, key) => (
                       <li key={key}>
-                        {/* <Link href={fLinkChild.link}><a>{fLinkChild.title}</a></Link> */}
                         <a href={fLinkChild.target}>{fLinkChild.title}</a>
                       </li>
                     ))}
@@ -57,22 +65,15 @@ const Footer = (props) => {
             <Col lg={3} className="mt-4">
               <h4>About</h4>
               <div className="text-muted mt-4">
-                <p>
+                <p style={{ color: "#98a0aa" }}>
                   We are a software solutions company with focus on providing
                   custom and personalized technology solutions.
                 </p>
               </div>
-              {/* <Form className="subscribe">
-                <input placeholder="Email" className="form-control" required />
-                {/* <Link href="#" legacyBehavior>
-                                    {/* <a className="submit"><i className="pe-7s-paper-plane"></i></a> */}
-              {/* </Link> */}
-              {/* </Form> */}
             </Col>
           </Row>
         </Container>
       </footer>
-      {/* import Footer link */}
       <FooterLink />
     </React.Fragment>
   );

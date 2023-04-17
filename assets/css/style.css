@@ -1156,6 +1156,9 @@ iframe {
 .text-white {
   color: #ffffff !important;
 }
+.projctNumSize {
+  font-size: 50px !important;
+}
 
 .border-white {
   color: #ffffff !important;
@@ -1502,7 +1505,9 @@ iframe {
   max-width: 600px;
   margin: 0 auto;
 }
-
+.project-completed {
+  font-size: 22px !important;
+}
 /* ------------- Demo 1 bg-pattern ------------- */
 .home-half {
   padding-bottom: 150px;
@@ -1889,8 +1894,8 @@ iframe {
 
 .testimonial-box img {
   margin: -40px auto;
-  height: 68px;
-  width: 68px;
+  height: 100%;
+  width: 100%;
 }
 
 .testimonial-box .testimonial-decs {
@@ -1906,6 +1911,9 @@ iframe {
   padding: 60px 25px 30px;
   line-height: 24px;
   font-style: italic;
+}
+.marginbottom .fusion-column {
+  border-right: 1px solid #f94e46;
 }
 
 .blog-box .blog-title {

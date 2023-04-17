@@ -9,16 +9,17 @@ function WebsiteDesc(props) {
         <div className="bg-overlay"></div>
         <Container>
           <Row>
-            <Col lg={12} className="text-center">
-              <h2 className="text-white">Build your dream website today</h2>
-              <p className="pt-3 home-desc">
-              Development and programming: for bringing together all elements to create a high-quality.
-              </p>
-              {/* <Link
-                                href="#"
-                            >
-                                <a className="btn btn-white mt-4 waves-effect waves-light mb-5">View Plan & Pricing</a>
-                            </Link> */}
+            <Col lg={4} className="text-center">
+              <h1 className="text-white projctNumSize">100+</h1>
+              <h2 className="pt-3 home-desc project-completed">Completed Projects</h2>
+            </Col>
+            <Col lg={4} className="text-center">
+              <h1 className="text-white projctNumSize">20+</h1>
+              <h2 className="pt-3 home-desc project-completed">Employees</h2>
+            </Col>
+            <Col lg={4} className="text-center">
+              <h1 className="text-white projctNumSize">2+</h1>
+              <h2 className="pt-3 home-desc project-completed">Years Helping Businesses</h2>
             </Col>
           </Row>
         </Container>
