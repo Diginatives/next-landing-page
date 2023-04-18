@@ -74,10 +74,16 @@ const Header = (props) => {
                       <NavLink href={"#" + item.idnm}> {item.heading}</NavLink>
                     </NavItem>
                   ))}
+
+                  {/* <NavItem>
+                    <NavLink href="https://github.com/reactstrap/reactstrap" target="#">
+                      GitHub
+                    </NavLink>
+                  </NavItem> */}
                 </Nav>
                 <div className="nav-button ms-auto">
                   <Nav navbar className="navbar-end">
-                    <ul className="list-inline social mt-4">
+                    <ul className="list-inline social">
                       <li className="list-inline-item">
                         <a
                           className="social-icon"

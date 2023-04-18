@@ -18,9 +18,9 @@ const links = [
     child: [
       { link: "#", title: "Services", target: "#services" },
       { link: "#", title: "Home", target: "#home" },
-      { link: "#", title: "Portfolio", target: "#blog" },
+      { link: "#", title: "Portfolio", target: "#portfolio" },
       { link: "#", title: "Careers", target: "#careers" },
-      { link: "#", title: "Contact Us", target: "#contact" },
+      { link: "#", title: "Contact", target: "mailto:info@diginatives.io" },
     ],
   },
   {
@@ -29,10 +29,18 @@ const links = [
       {
         link: "",
         title: "Suite 200, MainSt. Milpitas, CA 96035, USA",
-        target: "#",
+        target: "",
       },
-      { link: "", title: "Phone: +1(714)820-9946", target: "#" },
-      { link: "", title: "Email: info@diginatives.io", target: "#" },
+      {
+        link: "",
+        title: "Phone: +1(714)820-9946",
+        target: "tel:+1(714)820-9946",
+      },
+      {
+        link: "",
+        title: "Email: info@diginatives.io",
+        target: "mailto:info@diginatives.io",
+      },
     ],
   },
 ];

@@ -11,38 +11,52 @@ const Contact = () => {
       <section className="section " id="contact">
         <Container>
           {/* section title */}
-          <SectionTitle
-            title="GET IN TOUCH"
-            desc="We thrive when coming up with innovative ideas but also understand that a smart concept should be supported with measurable results."
-          />
+          <SectionTitle title="GET IN TOUCH" />
 
           <Row>
-            <Col lg={4}>
-              <div className="mt-4 pt-4">
-                <p className="mt-4">
-                  <span className="h5">Office Address 1:</span>
-                  <br />{" "}
-                  <span className="text-muted d-block mt-2">
-                    Suite 200, MainSt. Milpitas, CA 96035, USA
-                  </span>
-                </p>
-                <p className="mt-4">
-                  <span className="h5">Office Address 2:</span>
-                  <br />{" "}
-                  <span className="text-muted d-block mt-2">
-                    Office Number 112, Al Hafeez business center 89, Lahore.
-                  </span>
-                </p>
-                <p className="mt-4">
-                  <span className="h5">Working Hours:</span>
-                  <br />{" "}
-                  <span className="text-muted d-block mt-2">
-                    9:00AM To 6:00PM
-                  </span>
-                </p>
-              </div>
+            <Col lg={3}>
+              <p className="mt-4">
+                <span className="h5">Office Address 1:</span>
+                <br />{" "}
+                <span className="text-muted d-block mt-2">
+                  Suite 200, MainSt. Milpitas, CA 96035, USA
+                </span>
+              </p>
             </Col>
-            <Col lg={8}>
+
+            <Col lg={3}>
+              <p className="mt-4">
+                <span className="h5">Office Address 2:</span>
+                <br />{" "}
+                <span className="text-muted d-block mt-2">
+                  Office Number 112, Al Hafeez business center 89, Lahore.
+                </span>
+              </p>
+            </Col>
+            <Col lg={3}>
+              <p className="mt-4">
+                <span className="h5">Working Hours:</span>
+                <br />{" "}
+                <span className="text-muted d-block mt-2">
+                  9:00AM To 6:00PM
+                </span>
+              </p>
+            </Col>
+            <Col lg={3}>
+              <a href="mailto:info@diginatives.io">
+                {" "}
+                <p className="mt-4">
+                  <input
+                    type="submit"
+                    id="submit"
+                    name="send"
+                    className="submitBnt btn btn-primary"
+                    value="Send Message"
+                  />
+                </p>
+              </a>
+            </Col>
+            {/* <Col lg={8}>
               <div className="custom-form mt-4 pt-4">
                 <div id="message"></div>
                 <Formik
@@ -124,7 +138,7 @@ const Contact = () => {
                   </Form>
                 </Formik>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </section>

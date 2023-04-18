@@ -19,19 +19,10 @@ export default [
     idnm: "pricing",
     heading: "Careers",
   },
-  // {
-  //   id: 5,
-  //   idnm: "team",
-  //   heading: "Team",
-  // },
-  // {
-  //   id: 6,
-  //   idnm: "blog",
-  //   heading: "Blog",
-  // },
+ 
   {
     id: 5,
     idnm: "contact",
-    heading: "Contact Us",
+    heading: "Contact",
   },
 ];

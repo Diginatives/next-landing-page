@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import img3 from "assets/images/payment.png";
 const FooterLink = () => {
   return (
     <React.Fragment>
