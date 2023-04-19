@@ -1320,6 +1320,7 @@ iframe {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 1px;
   letter-spacing: 2px;
   height: auto;
   font-family: "Poppins", sans-serif;
@@ -1907,6 +1908,10 @@ iframe {
   box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1) !important;
 }
 
+.fusion-imageframe img {
+  vertical-align: top;
+  box-shadow: none !important;
+}
 .testimonial-box .testimonial-decs p {
   padding: 60px 25px 30px;
   line-height: 24px;

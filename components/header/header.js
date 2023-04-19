@@ -51,7 +51,7 @@ const Header = (props) => {
         >
           <Container>
             <NavbarBrand className="logo text-uppercase" href="/">
-              Diginatives
+            Php Laravel developers <br/><span style={{fontSize:"12px", fontWeight:"normal"}}>By Diginatives Group</span>
             </NavbarBrand>
             <NavbarToggler onClick={toogleModal}>
               <i className="mdi mdi-menu"></i>

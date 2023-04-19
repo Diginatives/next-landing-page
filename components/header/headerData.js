@@ -16,7 +16,7 @@ export default [
   },
   {
     id: 4,
-    idnm: "pricing",
+    idnm: "careers",
     heading: "Careers",
   },
  
