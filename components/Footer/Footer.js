@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form } from "reactstrap";
 import Link from "next/link";
 import FooterLink from "./FooterLink";
+// import { FaBeer } from 'react-icons/BsWhatsapp'
 const links = [
   {
     title: "Services",
@@ -83,6 +84,29 @@ const Footer = (props) => {
         </Container>
       </footer>
       <FooterLink />
+      <a
+        // position: fixed;
+        // bottom: 0px;
+        // right: 0px;
+        // width: 40px;
+        // margin-right: 25px;
+        // margin-bottom: 30px;
+        style={{
+          position: "fixed",
+          bottom: "0",
+          right: "0",
+          width: "40px",
+          marginBottom: "10px",
+          marginRight: "25px",
+        }}
+        href="https://api.whatsapp.com/send?phone=+1 (714) 820-9946&text=Hello this is the starting message"
+      >
+        <img
+          alt="No Image"
+          src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+          style={{ width: "55px", borderRadius: "40%" }}
+        />
+      </a>
     </React.Fragment>
   );
 };

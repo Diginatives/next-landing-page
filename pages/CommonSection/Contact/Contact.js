@@ -16,7 +16,7 @@ const Contact = () => {
           <Row>
             <Col lg={3}>
               <p className="mt-4">
-                <span className="h5">Office Address 1:</span>
+                <span className="h5">Office Address USA:</span>
                 <br />{" "}
                 <span className="text-muted d-block mt-2">
                   Suite 200, MainSt. Milpitas, CA 96035, USA
@@ -26,7 +26,7 @@ const Contact = () => {
 
             <Col lg={3}>
               <p className="mt-4">
-                <span className="h5">Office Address 2:</span>
+                <span className="h5">Office Address Pak:</span>
                 <br />{" "}
                 <span className="text-muted d-block mt-2">
                   Office Number 112, Al Hafeez business center 89, Lahore.
@@ -49,9 +49,8 @@ const Contact = () => {
                   <input
                     type="submit"
                     id="submit"
-                    name="send"
                     className="submitBnt btn btn-primary"
-                    value="Send Message"
+                    value="Hire Us"
                   />
                 </p>
               </a>

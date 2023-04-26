@@ -14,7 +14,7 @@ import GetStart from "pages/CommonSection/GetStart/GetStart";
 import Contact from "pages/CommonSection/Contact/Contact";
 import Social from "pages/CommonSection/Social";
 
-const Layout1 = (props) => {
+const phpLandingPage = (props) => {
   return (
     <React.Fragment>
       {/* import Header */}
@@ -60,4 +60,4 @@ const Layout1 = (props) => {
   );
 };
 
-export default Layout1;
+export default phpLandingPage;

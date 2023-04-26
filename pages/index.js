@@ -3,7 +3,7 @@ import Router from "next/router";
 
 export default function Index() {
   React.useEffect(() => {
-    Router.push("/layout1");
+    Router.push("/phplandingpage");
   });
 
   return <div />;

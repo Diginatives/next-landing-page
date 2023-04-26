@@ -32,11 +32,6 @@ const AboutUs = (props) => {
                     and extensions.
                   </li>
                 </ul>
-                {/* <Link
-                                    href="#"
-                                >
-                                    <a className="btn btn-primary mt-4 waves-effect waves-light">Learn More <i className="mdi mdi-arrow-right"></i></a>
-                                </Link> */}
               </div>
             </Col>
             <Col lg={7}>
