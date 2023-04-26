@@ -18,6 +18,33 @@ import img3 from "assets/images/bg-pattern.png";
 const Section = () => {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
+  const [isinput, setInput] = useState({
+    project: "",
+    companyName: "",
+    fullName: "",
+    phone: "",
+    email: "",
+  });
+  const { email, companyName, fullName, phone, project } = isinput;
+  const handleOnchange = (e) => {
+    const { name, value } = e.target;
+    setInput({
+      ...isinput,
+      [name]: value,
+    });
+  };
+
+  const handleOnsubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      email: email,
+      companyName: companyName,
+      fullName: fullName,
+      phone: phone,
+      project: project,
+    };
+    console.log(data, "data");
+  };
   return (
     <React.Fragment>
       <section
@@ -43,9 +70,8 @@ const Section = () => {
                   {/* <a href="mailto:info@diginatives.io"> */}{" "}
                   <p className="mt-4">
                     <input
-                      type="submit"
+                      type="button"
                       id="submit"
-                      // name="send"
                       className="submitBnt btn btn-dark"
                       value="Hire Us"
                       onClick={toggle}
@@ -61,41 +87,70 @@ const Section = () => {
           <img alt="dorsin" src={img3.src} />
         </div>
         <Modal isOpen={modal} toggle={toggle}>
-          <ModalHeader toggle={toggle}>
-            Leave your contacts and we will provide free final estimation
-          </ModalHeader>
-          {/* <div > */}
-          <FormGroup className="container mt-2">
-            <Label for="fullName">Full Name*</Label>
-            <Input id="fullName" name="fullName" type="text" required />
-          </FormGroup>
-          <FormGroup className="container">
-            <Label for="companyName">Company Name*</Label>
-            <Input id="companyName" name="companyName" type="text" required />
-          </FormGroup>
-          <FormGroup className="container">
-            <Label for="Phone">Phone*</Label>
-            <Input id="phone" name="phone" required type="number" />
-          </FormGroup>
-          <FormGroup className="container">
-            <Label for="mail">E-mail*</Label>
-            <Input id="mail" name="email" required type="email" />
-          </FormGroup>
-          <FormGroup className="container">
-            <Label for="project">
-              Tell us about your project(optional)
-            </Label>
-            <Input id="project" name="project" type="text" />
-          </FormGroup>
-          {/* </div> */}
-          <ModalFooter>
-            <Button color="submitBnt btn btn-primary" onClick={toggle}>
-              Submit
-            </Button>{" "}
-            <Button color="submitBnt btn btn-dark" onClick={toggle}>
-              Cancel
-            </Button>
-          </ModalFooter>
+          <form onSubmit={handleOnsubmit}>
+            <ModalHeader toggle={toggle}>
+              Leave your contacts and we will provide free final estimation
+            </ModalHeader>
+            {/* <div > */}
+            <FormGroup className="container mt-2">
+              <Label for="fullName">Full Name*</Label>
+              <Input
+                id="fullName"
+                name="fullName"
+                type="text"
+                required
+                onChange={handleOnchange}
+              />
+            </FormGroup>
+            <FormGroup className="container">
+              <Label for="companyName">Company Name*</Label>
+              <Input
+                id="companyName"
+                name="companyName"
+                type="text"
+                required
+                onChange={handleOnchange}
+              />
+            </FormGroup>
+            <FormGroup className="container">
+              <Label for="Phone">Phone*</Label>
+              <Input
+                id="phone"
+                name="phone"
+                required
+                type="number"
+                onChange={handleOnchange}
+              />
+            </FormGroup>
+            <FormGroup className="container">
+              <Label for="mail">E-mail*</Label>
+              <Input
+                id="mail"
+                name="email"
+                required
+                type="email"
+                onChange={handleOnchange}
+              />
+            </FormGroup>
+            <FormGroup className="container">
+              <Label for="project">Tell us about your project(optional)</Label>
+              <Input
+                id="project"
+                name="project"
+                type="text"
+                onChange={handleOnchange}
+              />
+            </FormGroup>
+            {/* </div> */}
+            <ModalFooter>
+              <Button color="submitBnt btn btn-primary" type="submit">
+                Submit
+              </Button>{" "}
+              <Button color="submitBnt btn btn-dark" onClick={toggle}>
+                Cancel
+              </Button>
+            </ModalFooter>
+          </form>
         </Modal>
       </section>
     </React.Fragment>
