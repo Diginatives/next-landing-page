@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Row,
@@ -6,13 +6,14 @@ import {
   Button,
   Modal,
   ModalHeader,
-  ModalBody,
   ModalFooter,
   FormGroup,
   Label,
   Input,
 } from "reactstrap";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 // Modal Video
 import img3 from "assets/images/bg-pattern.png";
 const Section = () => {
@@ -25,6 +26,7 @@ const Section = () => {
     phone: "",
     email: "",
   });
+  const [isResult, setResult] = useState("");
   const { email, companyName, fullName, phone, project } = isinput;
   const handleOnchange = (e) => {
     const { name, value } = e.target;
@@ -33,18 +35,48 @@ const Section = () => {
       [name]: value,
     });
   };
+  const fetchData = async (userData) => {
+    try {
+      const response = await fetch(`http://localhost:5000/api/user`, {
+        method: "POST", // or 'PUT'
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
 
+      const result = await response.json();
+      setResult(result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
   const handleOnsubmit = (e) => {
     e.preventDefault();
     const data = {
       email: email,
-      companyName: companyName,
-      fullName: fullName,
+      company: companyName,
+      name: fullName,
       phone: phone,
       project: project,
     };
-    console.log(data, "data");
+    fetchData(data);
   };
+  useEffect(() => {
+    if (isResult) {
+      toast.success(
+        "Thanks for contact to us Our legel team will contact to you Soon..!"
+      );
+      setTimeout(() => {
+        setModal(false);
+      }, 3000);
+    } else if (isResult === "") {
+      setTimeout(() => {
+        setModal(false);
+        // toast.warning("Error: Please again");
+      }, 3000);
+    }
+  }, [isResult]);
   return (
     <React.Fragment>
       <section
@@ -141,7 +173,6 @@ const Section = () => {
                 onChange={handleOnchange}
               />
             </FormGroup>
-            {/* </div> */}
             <ModalFooter>
               <Button color="submitBnt btn btn-primary" type="submit">
                 Submit
@@ -152,6 +183,7 @@ const Section = () => {
             </ModalFooter>
           </form>
         </Modal>
+        <ToastContainer position="bottom-right" newestOnTop />
       </section>
     </React.Fragment>
   );

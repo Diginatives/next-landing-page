@@ -1,11 +1,84 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import { Formik, Field, Form } from "formik";
-
+import React, { useEffect, useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  FormGroup,
+  Label,
+  Input,
+} from "reactstrap";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 //Import Section Title
 import SectionTitle from "components/Common/SectionTitle";
 
 const Contact = () => {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+  const [isinput, setInput] = useState({
+    project: "",
+    companyName: "",
+    fullName: "",
+    phone: "",
+    email: "",
+  });
+  const [isResult, setResult] = useState("");
+  const { email, companyName, fullName, phone, project } = isinput;
+  const handleOnchange = (e) => {
+    const { name, value } = e.target;
+    setInput({
+      ...isinput,
+      [name]: value,
+    });
+  };
+  const fetchData = async (userData) => {
+    try {
+      const response = await fetch(`http://localhost:5000/api/user`, {
+        method: "POST", // or 'PUT'
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+
+      const result = await response.json();
+      setResult(result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  const handleOnsubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      email: email,
+      company: companyName,
+      name: fullName,
+      phone: phone,
+      project: project,
+    };
+    fetchData(data);
+  };
+  useEffect(() => {
+    if (isResult) {
+      toast.success(
+        "Thanks for contact to us Our legel team will contact to you Soon..!"
+      );
+      setTimeout(() => {
+        setModal(false);
+      }, 3000);
+    } else if (isResult === "") {
+      setTimeout(() => {
+        setModal(false);
+        // toast.warning("Error: Please again");
+      }, 3000);
+    }
+  }, [isResult]);
   return (
     <React.Fragment>
       <section className="section " id="contact">
@@ -43,7 +116,6 @@ const Contact = () => {
               </p>
             </Col>
             <Col lg={3}>
-              <a href="mailto:info@diginatives.io">
                 {" "}
                 <p className="mt-4">
                   <input
@@ -51,94 +123,79 @@ const Contact = () => {
                     id="submit"
                     className="submitBnt btn btn-primary"
                     value="Hire Us"
+                    onClick={toggle}
                   />
                 </p>
-              </a>
             </Col>
-            {/* <Col lg={8}>
-              <div className="custom-form mt-4 pt-4">
-                <div id="message"></div>
-                <Formik
-                  initialValues={{
-                    firstName: "",
-                    email: "",
-                    subject: "",
-                  }}
-                  onSubmit={async (values) => {
-                    await new Promise((r) => setTimeout(r, 500));
-                  }}
-                >
-                  <Form name="contact-form" id="contact-form">
-                    <Row>
-                      <Col lg={6}>
-                        <div className="mt-2">
-                          <Field
-                            required
-                            name="firstName"
-                            id="firstName"
-                            type="text"
-                            className="form-control"
-                            placeholder="Your name*"
-                          />
-                        </div>
-                      </Col>
-                      <Col lg={6}>
-                        <div className="mt-2">
-                          <Field
-                            required
-                            name="email"
-                            id="email"
-                            type="email"
-                            className="form-control"
-                            placeholder="Your email*"
-                          />
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col lg={12}>
-                        <div className="mt-2">
-                          <Field
-                            required
-                            name="subject"
-                            type="text"
-                            className="form-control"
-                            id="subject"
-                            placeholder="Your Subject.."
-                          />
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col lg={12}>
-                        <div className="mt-2">
-                          <textarea
-                            name="comments"
-                            id="comments"
-                            rows="4"
-                            className="form-control"
-                            placeholder="Your message..."
-                          ></textarea>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col lg={12} className="text-end">
-                        <input
-                          type="submit"
-                          id="submit"
-                          name="send"
-                          className="submitBnt btn btn-primary"
-                          value="Send Message"
-                        />
-                        <div id="simple-msg"></div>
-                      </Col>
-                    </Row>
-                  </Form>
-                </Formik>
-              </div>
-            </Col> */}
           </Row>
+          <Modal isOpen={modal} toggle={toggle}>
+            <form onSubmit={handleOnsubmit}>
+              <ModalHeader toggle={toggle}>
+                Leave your contacts and we will provide free final estimation
+              </ModalHeader>
+              {/* <div > */}
+              <FormGroup className="container mt-2">
+                <Label for="fullName">Full Name*</Label>
+                <Input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  required
+                  onChange={handleOnchange}
+                />
+              </FormGroup>
+              <FormGroup className="container">
+                <Label for="companyName">Company Name*</Label>
+                <Input
+                  id="companyName"
+                  name="companyName"
+                  type="text"
+                  required
+                  onChange={handleOnchange}
+                />
+              </FormGroup>
+              <FormGroup className="container">
+                <Label for="Phone">Phone*</Label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  required
+                  type="number"
+                  onChange={handleOnchange}
+                />
+              </FormGroup>
+              <FormGroup className="container">
+                <Label for="mail">E-mail*</Label>
+                <Input
+                  id="mail"
+                  name="email"
+                  required
+                  type="email"
+                  onChange={handleOnchange}
+                />
+              </FormGroup>
+              <FormGroup className="container">
+                <Label for="project">
+                  Tell us about your project(optional)
+                </Label>
+                <Input
+                  id="project"
+                  name="project"
+                  type="text"
+                  onChange={handleOnchange}
+                />
+              </FormGroup>
+              <ModalFooter>
+                <Button color="submitBnt btn btn-primary" type="submit">
+                  Submit
+                </Button>{" "}
+                <Button color="submitBnt btn btn-dark" onClick={toggle}>
+                  Cancel
+                </Button>
+              </ModalFooter>
+            </form>
+          </Modal>
+          <ToastContainer position="bottom-right" newestOnTop />
         </Container>
       </section>
     </React.Fragment>
