@@ -39,7 +39,7 @@ const Contact = () => {
   };
   const fetchData = async (userData) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/user`, {
+      const response = await fetch(`https://next-landing-backend-9vdcpy3zl-diginatives.vercel.app/api/user`, {
         method: "POST", // or 'PUT'
         headers: {
           "Content-Type": "application/json",
