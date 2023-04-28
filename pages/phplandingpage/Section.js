@@ -89,7 +89,7 @@ const Section = () => {
           <div className="display-table-cell">
             <Container>
               <Row className="justify-content-centePser">
-                <Col lg={8} className="text-white text-center">
+                <Col lg={12} className="text-white text-center">
                   <h1 className="home-title">Laravel Development Services</h1>
                   <h3 className="home-title1">
                     Custom Elegantly Coded Solutions
@@ -99,17 +99,11 @@ const Section = () => {
                     using the Laravel framework that are loaded with high-level
                     features and sophisticated functionalities.
                   </p>
-                  {/* <a href="mailto:info@diginatives.io"> */}{" "}
                   <p className="mt-4">
-                    <input
-                      type="button"
-                      id="submit"
-                      className="submitBnt btn btn-dark"
-                      value="Hire Us"
-                      onClick={toggle}
-                    />
+                    <button type="button" onClick={toggle}>
+                      Hire Us
+                    </button>
                   </p>
-                  {/* </a> */}
                 </Col>
               </Row>
             </Container>
@@ -150,7 +144,8 @@ const Section = () => {
                 id="phone"
                 name="phone"
                 required
-                type="number"
+                type="tel"
+                placeholder="0923001234567"
                 onChange={handleOnchange}
               />
             </FormGroup>

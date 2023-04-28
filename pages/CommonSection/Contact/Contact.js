@@ -116,16 +116,12 @@ const Contact = () => {
               </p>
             </Col>
             <Col lg={3}>
-                {" "}
-                <p className="mt-4">
-                  <input
-                    type="submit"
-                    id="submit"
-                    className="submitBnt btn btn-primary"
-                    value="Hire Us"
-                    onClick={toggle}
-                  />
-                </p>
+              {" "}
+              <p className="mt-4">
+                <button type="submit" onClick={toggle}>
+                  Hire Us
+                </button>
+              </p>
             </Col>
           </Row>
           <Modal isOpen={modal} toggle={toggle}>
@@ -160,7 +156,8 @@ const Contact = () => {
                   id="phone"
                   name="phone"
                   required
-                  type="number"
+                  type="tel"
+                  placeholder="0923001234567"
                   onChange={handleOnchange}
                 />
               </FormGroup>

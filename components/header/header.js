@@ -75,11 +75,7 @@ const Header = (props) => {
                     </NavItem>
                   ))}
 
-                  {/* <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap" target="#">
-                      GitHub
-                    </NavLink>
-                  </NavItem> */}
+                 
                 </Nav>
                 <div className="nav-button ms-auto">
                   <Nav navbar className="navbar-end">
@@ -90,7 +86,7 @@ const Header = (props) => {
                           href="https://www.facebook.com/DiginativesPakistan/"
                           target="_blank"
                         >
-                          <i className="mdi mdi-facebook"></i>
+                          <i  className="mdi mdi-facebook"></i>
                         </a>
                         {/* <Link href="#">
                                     </Link> */}

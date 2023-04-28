@@ -46,6 +46,16 @@ h6 {
 button,
 button:focus {
   outline: none !important;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 50, 44, 0.81) 0%,
+    #f4645f 103.02%
+  );
+  color: #ffffff;
+  width: 120px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
 }
 
 a {
@@ -1968,14 +1978,12 @@ textarea.form-control {
   height: 80px;
 }
 
-.contact-social .social-icon {
-  border: 2px solid #afb5bd;
-  border-radius: 30%;
-  color: #afb5bd;
-  width: 48px;
-  height: 48px;
-  display: block;
-  font-size: 19px;
+.social-icon {
+  color: #FFFFFF !important;
+  width: 28px;
+  height: 28px;
+  /* display: block; */
+  font-size: 25px;
   line-height: 44px;
   text-align: center;
 }
@@ -2303,8 +2311,6 @@ ul.pattern .color8 {
   }
 }
 
-
-
 /*css for slider*/
 
 /* (A) FIXED WRAPPER */
@@ -2312,9 +2318,11 @@ ul.pattern .color8 {
   overflow: hidden; /* HIDE SCROLL BAR */
   /* background: #eee; */
 }
- 
+
 /* (B) MOVING TICKER WRAPPER */
-.hmove { display: flex; }
+.hmove {
+  display: flex;
+}
 
 /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
 .hitem {
@@ -2324,13 +2332,21 @@ ul.pattern .color8 {
   padding: 10px;
   text-align: center;
 }
- 
+
 /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
 /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
 @keyframes tickerh {
-  0% { transform: translate3d(100%, 0, 0); }
-  100% { transform: translate3d(-400%, 0, 0); }
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-400%, 0, 0);
+  }
 }
-.hmove { animation: tickerh linear 15s infinite; }
-.hmove:hover { animation-play-state: paused; }
+.hmove {
+  animation: tickerh linear 15s infinite;
+}
+.hmove:hover {
+  animation-play-state: paused;
+}
 /*# sourceMappingURL=style.css.map */

@@ -42,15 +42,6 @@ const GetStart = () => {
                 Vokalia and Consonantia, there live the blind texts.{" "}
               </p>
              
-              {/* <div class="hwrap">
-                <div class="hmove">
-                  {images.map((item, key) => (
-                    <div class="hitem" key={key}>
-                      <img alt="pattern" src={item.imagesInfo.src} />
-                    </div>
-                  ))}
-                </div>
-              </div> */}
             </Col>
           </Row>
         {/* </Container> */}
