@@ -46,16 +46,22 @@ h6 {
 button,
 button:focus {
   outline: none !important;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 50, 44, 0.81) 0%,
-    #f4645f 103.02%
-  );
-  color: #ffffff;
+  background: #ffffff;
+  color: #f9322c;
   width: 120px;
-  height: 50px;
+  height: 40px;
   border-radius: 12px;
   border: 1px solid #ffffff;
+}
+.contact-button {
+  outline: none !important;
+  background: #F5F5F5;
+  color: #F9322C;
+  width: 120px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #F9322C;
+  box-sizing: border-box;
 }
 
 a {
@@ -1979,7 +1985,7 @@ textarea.form-control {
 }
 
 .social-icon {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   width: 28px;
   height: 28px;
   /* display: block; */

@@ -39,13 +39,16 @@ const Contact = () => {
   };
   const fetchData = async (userData) => {
     try {
-      const response = await fetch(`https://next-landing-backend-9vdcpy3zl-diginatives.vercel.app/api/user`, {
-        method: "POST", // or 'PUT'
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userData),
-      });
+      const response = await fetch(
+        `https://next-landing-backend-9vdcpy3zl-diginatives.vercel.app/api/user`,
+        {
+          method: "POST", // or 'PUT'
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        }
+      );
 
       const result = await response.json();
       setResult(result);
@@ -118,7 +121,11 @@ const Contact = () => {
             <Col lg={3}>
               {" "}
               <p className="mt-4">
-                <button type="submit" onClick={toggle}>
+                <button
+                  className="contact-button"
+                  type="submit"
+                  onClick={toggle}
+                >
                   Hire Us
                 </button>
               </p>
